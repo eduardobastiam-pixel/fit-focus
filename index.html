@@ -361,7 +361,7 @@ function cargarEdicion(id){
   ocultarFeedback();
   limpiarErroresCampo();
   submitBtn.textContent = 'Actualizar producto';
-  window.location.hash = '#formulario';
+  document.getElementById('formulario').scrollIntoView({ behavior: 'smooth' });
 }
 
 function eliminarProducto(id){
