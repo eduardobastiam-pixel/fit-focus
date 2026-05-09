@@ -385,7 +385,7 @@ function agregarProductoDemo(datos){
   productos.push(producto);
   mostrarFeedback('Producto agregado correctamente al carrito.', 'success');
   renderizarCarrito();
-  window.location.hash = '#carrito';
+  document.getElementById('carrito').scrollIntoView({ behavior: 'smooth' });
 }
 
 form.addEventListener('submit', (e) => {
